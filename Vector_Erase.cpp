@@ -54,3 +54,30 @@ The first query is to erase the 2nd element in the vector, which is 4. Then, mod
 #include <algorithm>
 using namespace std;
 
+int main() {
+
+    vector<int> arr;
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        int val;
+        cin>>val;
+        arr.push_back(val);
+    }
+    int pos,s,e;
+    cin>>pos;
+    cin>>s>>e;
+    arr.erase(arr.begin()+pos-1);
+    arr.erase(arr.begin()+s-1,arr.begin()+e-1);
+    int size=arr.size();
+    cout<<size<<endl;
+    for(auto i=arr.begin();i<arr.end();i++)
+    {
+        cout<<*i<<" ";
+    }
+
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
