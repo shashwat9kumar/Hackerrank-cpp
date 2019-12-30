@@ -45,3 +45,12 @@ The first query is to erase the 2nd element in the vector, which is 4. Then, mod
 
 
 
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
